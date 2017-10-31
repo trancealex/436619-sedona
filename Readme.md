@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Торопов](https://up.htmlacademy.ru/htmlcss/19/user/436619).
-* Наставник: [Иван Тарасов] (https://htmlacademy.ru/profile/tarasoff/276271).
+* Наставник: [Иван Тарасов](https://htmlacademy.ru/profile/tarasoff).
 
 ---
 

@@ -5,124 +5,114 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-      <header class="main-header">
-          <a class="main-header-logo">
-              <img src="img/index-logo.svg" width="" height="" alt="Логотип города Седона">
-          </a>
-          <nav class="main-navigation">
-              <ul class="site-navigation">
-                  <li><a href="info.html">Информация</a></li>
-                  <li><a href="content.html">Фото и видео</a></li>
-                  <li><a href="map.html">Карта штата</a></li>
-                  <li><a href="hotels.html">Гостиницы</a></li>
-              </ul>
-          </nav>
-      <!--1. Логотип, как я понял, будет потом как-то позиционироваться
-          2. Размеры изображений здесь и далее укажем при нарезке-->
-      </header>
-      <main class="container">
-          
-          <div class="main-info">
-              <h1 class="main-header">Седона</h1>
-              <img src="img/slogan-main.svg" width="" height="" alt="">
-              <b class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-          <!--1. Седона вполне подходит для единственного <h1>
-              2. Надписи сверху и снизу скорей всего картинка или две разных (здесь у меня пока вопрос)
-                 а может даже тоже в CSS оформлены, не уверен пока
-              3. По тегу раздела тоже думал, не <section> точно, до <article> не дотягивает, пусть будет пока <div>
-              4. Ну и обычный текст-лид с тегом <b>, хотел обернуть его в <p> но посчитал излишним-->
-          </div>
-          
-          <section class="features">
-              <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-              <ol class="features-list">
-                  <li class="feature-item special">
-                      <h3>Настоящий городок</h3>
-                      <p>-1-</p>
-                      <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                      <img src="img/feature_1.svg" width="" height="" alt="Размеренная жизнь Седоны">
-                      <ul class="features-list-added">
-                          <li class="feature-item-added">
-                              <h4>Жилье</h4>
-                              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                          </li>
-                          <li class="feature-item-added">
-                              <h4>Еда</h4>
-                              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                          </li>
-                          <li class="feature-item-added">
-                              <h4>Сувениры</h4>
-                              <p>Не только китайского, но и местного производства!</p>
-                          </li>
-                      </ul>
+
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="http://via.placeholder.com/140x70" width="140" height="70" alt="Логотип Седоны">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="content.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <div class="main-info">
+        <h1 class="main-info-item">Sedona</h1>
+        <img src="http://via.placeholder.com/300x370/" width="300" height="370" alt="Пафосный слоган-картинка">
+        <b class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+      </div>
+
+      <section class="features">
+        <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+          <ol class="features-list">
+            <li class="feature-item special">
+              <h3>Настоящий городок</h3>
+              <p>-№1-</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="http://via.placeholder.com/800x260" width="800" height="260" alt="Размеренная жизнь Седоны">
+                <ul class="features-list-added">
+                  <li class="feature-item-added">
+                    <h4>Жилье</h4>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
-                  <li class="feature-item special">
-                      <h3>Там есть мост Дьавола</h3>
-                      <p>-2-</p>
-                      <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-                      <img src="img/feature_2.svg" width="" height="" alt="Мост Дьавола">
+                  <li class="feature-item-added">
+                    <h4>Еда</h4>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
-                  <li class="feature-item">
-                      <h3>Небольшая площадь</h3>
-                      <p>-3-</p>
-                      <p>Все достопримечательности находятся очень близко</p>
+                  <li class="feature-item-added">
+                    <h4>Сувениры</h4>
+                    <p>Не только китайского, но и местного производства!</p>
                   </li>
-                  <li class="feature-item">
-                      <h3>Красивая дорога</h3>
-                      <p>-4-</p>
-                      <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                  </li>
-                  <li class="feature-item">
-                      <h3>Мало туристов</h3>
-                      <p>-5-</p>
-                      <p>Большинство едет в Гранд Каньон и толпится там</p>
-                  </li>
-              </ol>
-          <!--1. Определенно блок с причинами - это <section>
-              2. Прослеживается структура многоуровневого списка Главный Упорядоченный с Неупорядоченным внутри
-              3. Два пункта Упорядоченного списка выглядят по-особенному и содержат изображения задал им доп класс special
-              4. Изображения в пунктах Неупорядоченного списка декоративные и вставляются через CSS
-              5. Не совсем уверен на счет циферок в Упорядоченном списке -1- -2- и т.д., но склоняюсь что это все-таки осн. конт.
-              6. PS. Смотрю и думаю, что очень много узнаю и потренируюсь здесь с CSS )))-->
-          </section>
-          
-          <section class="hotel-search">
-              <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-              <b class="intresting">Заинтересовались?</b>
-              <p>
-                  Укажите предполагаемые даты поездки,<br>
-                  и мы покажем Вам лучшие предложения гостиниц в Седоне
-              </p>
-              <span class="button order_button">Поиск гостиницы в Седоне</span>
-              <img src="img/sedona_map.svg" width="" height="" alt="Карта окрестностей Седоны">
-          <!--1. Блок поиска гостиницы - это тоже на мой взгляд <section>
-              2. Заголовок здесь скрытый
-              3. Кнопка. Как я понял по ТЗ - она будет всегда отображена, а сама форма модальная, хоть и должна быть
-                 отображена сразу, то есть её верстка идет после футера, а появляется она сразу благодаря JS
-              4. Правильно ли я понял, что нажатие на кнопку "Поиск гостиницы в Седоне" убирает форму из виду
-                 а при повторном нажатии она появляется снова?-->
-          </section>
-      </main>
-      <footer class="main-footer">
-          <p class="hashtag">
-              #VisitSedona
-          </p>
-          <div class="footer-social">
-              <ul>
-                  <li><a class="social-button" href="#">Twitter</a></li>
-                  <li><a class="social-button" href="#">Facebook</a></li>
-                  <li><a class="social-button" href="#">Youtube</a></li>
-              </ul>
-          </div>
-          <div class="copyright">
-              <p>Website by</p>
-              <a class="webstudio" href="https://htmlacademy.ru/intensive/htmlcss">
-                  <img src="img/htmlacademy_logo.svg" width="" height="" alt="HTML Academy">
-              </a>
-          </div>
-      <!--По Футеру вроде все понятно-->
-      </footer>
-      <!--Здесь будет форма заказа гостиницы-->
+                </ul>
+            </li>
+            <li class="feature-item special">
+              <h3>Там есть мост Дьавола</h3>
+              <p>-№2-</p>
+              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+              <img src="http://via.placeholder.com/800x260" width="800" height="260" alt="Мост Дьавола">
+            </li>
+            <li class="feature-item">
+              <h3>Небольшая площадь</h3>
+              <p>-№3-</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="feature-item">
+              <h3>Красивая дорога</h3>
+              <p>-№4-</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="feature-item">
+              <h3>Мало туристов</h3>
+              <p>-№5-</p>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ol>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <b class="intresting">Заинтересовались?</b>
+        <p>
+          Укажите предполагаемые даты поездки,<br>
+          и мы покажем Вам лучшие предложения гостиниц в Седоне
+        </p>
+        <span class="button order_button">Поиск гостиницы в Седоне</span>
+      </section>
+
+      <section class="map-area">
+        <h2 class="visually-hidden">Карта окрестностей Седоны</h2>
+        <img src="http://via.placeholder.com/1200x475" width="1200" height="475" alt="Карта окрестностей Седоны">
+        <!--Здесь будет форма заказа гостиницы-->
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <p class="hashtag">
+        #VisitSedona
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="copyright">
+        Website by
+        <a class="webstudio" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="http://via.placeholder.com/120x50" width="120" height="50" alt="HTML Academy">
+        </a>
+      </p>
+    </footer>
+
   </body>
 </html>

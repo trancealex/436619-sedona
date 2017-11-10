@@ -10,13 +10,13 @@
 
     <header class="main-header">
       <a class="main-header-logo">
-        <img src="img/sedona_logo.png" width="138" height="70" alt="Логотип Седоны">
+        <img src="img/sedona_logo.png" alt="Логотип Седоны" width="138" height="70">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="content.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -25,19 +25,18 @@
     <main class="container">
 
       <div class="main-info">
-        <h1 class="vissualy-hidden">Добро пожаловать в Седону</h1>
-        <img src="img/welcome_slogan.png" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img src="img/welcome_slogan.png" alt="Добро пожаловать в Седону. И пусть Гранд Каньон подождёт" width="458" height="352">
       </div>
 
       <section class="features">
-        <b class="features-lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+        <h1 class="features-lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
         <ol class="features-list">
           <li class="feature-item special">
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/sedona_feature_1.jpg" width="1600" height="800" alt="Размеренная жизнь Седоны">
+            <img src="img/sedona_feature_1.jpg" alt="Размеренная жизнь Седоны" width="1600" height="800">
               <ul class="features-list-added">
                 <li class="feature-item-added">
                   <h4>Жилье</h4>
@@ -57,7 +56,7 @@
             <h3>Там есть мост Дьавола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-            <img src="img/sedona_feature_2.jpg" width="1600" height="800" alt="Мост Дьавола">
+            <img src="img/sedona_feature_2.jpg" alt="Мост Дьавола" width="1600" height="800">
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -84,13 +83,38 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
-        <span class="button order_button">Поиск гостиницы в Седоне</span>
+        <button class="button order-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="map-area">
         <h2 class="visually-hidden">Карта окрестностей Седоны</h2>
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта окрестностей Седоны">
-        <!--Здесь будет форма заказа гостиницы-->
+        <img src="img/map.jpg" alt="Карта окрестностей Седоны" width="1200" height="593">
+
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="booking-date">
+            <label for="booking-form-arrival">Дата заезда:</label>
+            <input type="text" id="booking-form-arrival" name="arrival" placeholder="24 апреля 2017">
+            <button class="booking-form-calendar" type="button">Календарь</button>
+          </p> 
+          <p class="booking-date">
+            <label for="booking-form-departure">Дата выезда:</label>
+            <input type="text" id="booking-form-departure" name="departure" placeholder="4 июля 2017">
+            <button class="booking-form-calendar" type="button">Календарь</button>
+          </p>
+          <p class="booking-people">
+            <label for="booking-form-adult">Взрослые:</label>
+            <button class="button-minus" type="button">Минус</button>
+            <input type="text" id="booking-form-adult" name="adult" placeholder="2">
+            <button class="button-plus" type="button">Плюс</button>
+          </p>
+          <p class="booking-people">
+            <label for="booking-form-child">Дети:</label>
+            <button class="button-minus" type="button">Минус</button>
+            <input type="text" id="booking-form-child" name="child" placeholder="0">
+            <button class="button-plus" type="button">Плюс</button>
+          </p>
+          <button class="button searh-button" type="submit">Найти</button>
+        </form>
       </section>
 
     </main>
@@ -109,7 +133,7 @@
       <p class="copyright">
         Website by
         <a class="webstudio" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="120" height="50" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="120" height="50">
         </a>
       </p>
     </footer>

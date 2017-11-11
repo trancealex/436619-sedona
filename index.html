@@ -24,7 +24,7 @@
 
     <main class="container">
 
-      <div class="main-info">
+      <div class="intro">
         <img src="img/welcome_slogan.png" alt="Добро пожаловать в Седону. И пусть Гранд Каньон подождёт" width="458" height="352">
       </div>
 
@@ -53,10 +53,10 @@
               </ul>
           </li>
           <li class="feature-item special">
-            <h3>Там есть мост Дьавола</h3>
+            <h3>Там есть мост Дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-            <img src="img/sedona_feature_2.jpg" alt="Мост Дьавола" width="1600" height="800">
+            <img src="img/sedona_feature_2.jpg" alt="Мост Дьявола" width="1600" height="800">
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -92,26 +92,38 @@
 
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="booking-date">
-            <label for="booking-form-arrival">Дата заезда:</label>
-            <input type="text" id="booking-form-arrival" name="arrival" placeholder="24 апреля 2017">
-            <button class="booking-form-calendar" type="button">Календарь</button>
-          </p> 
+            <label for="booking-date-arrival">Дата заезда:</label>
+            <input type="text" id="booking-date-arrival" name="arrival" placeholder="24 апреля 2017">
+            <button class="booking-date-calendar" type="button">
+              <span class="visually-hidden">Календарь для выбора даты заезда</span>
+            </button>
+          </p>
           <p class="booking-date">
-            <label for="booking-form-departure">Дата выезда:</label>
-            <input type="text" id="booking-form-departure" name="departure" placeholder="4 июля 2017">
-            <button class="booking-form-calendar" type="button">Календарь</button>
+            <label for="booking-date-departure">Дата выезда:</label>
+            <input type="text" id="booking-date-departure" name="departure" placeholder="4 июля 2017">
+            <button class="booking-date-calendar" type="button">
+              <span class="visually-hidden">Календарь для выбора даты выезда</span>
+            </button>
           </p>
           <p class="booking-people">
-            <label for="booking-form-adult">Взрослые:</label>
-            <button class="button-minus" type="button">Минус</button>
-            <input type="text" id="booking-form-adult" name="adult" placeholder="2">
-            <button class="button-plus" type="button">Плюс</button>
+            <label for="booking-people-adult">Взрослые:</label>
+            <button class="button-minus" type="button">
+              <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
+            </button>
+            <input type="text" id="booking-people-adult" name="adult" placeholder="2">
+            <button class="button-plus" type="button">
+              <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
+            </button>
           </p>
           <p class="booking-people">
-            <label for="booking-form-child">Дети:</label>
-            <button class="button-minus" type="button">Минус</button>
-            <input type="text" id="booking-form-child" name="child" placeholder="0">
-            <button class="button-plus" type="button">Плюс</button>
+            <label for="booking-people-child">Дети:</label>
+            <button class="button-minus" type="button">
+              <span class="visually-hidden">Кнопка уменьшения количества детей</span>
+            </button>
+            <input type="text" id="booking-people-child" name="child" placeholder="0">
+            <button class="button-plus" type="button">
+              <span class="visually-hidden">Кнопка увеличения количества детей</span>
+            </button>
           </p>
           <button class="button searh-button" type="submit">Найти</button>
         </form>
@@ -125,9 +137,9 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
       </div>
       <p class="copyright">

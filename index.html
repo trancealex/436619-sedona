@@ -3,11 +3,12 @@
   <head>
     <title>HTML Academy: Седона</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
     <header class="main-header">
       <a class="main-header-logo">
         <img src="img/sedona_logo.png" alt="Логотип Седоны" width="138" height="70">
@@ -32,7 +33,7 @@
         <h1 class="features-lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
         <ol class="features-list">
-          <li class="feature-item special">
+          <li class="feature-item special-item">
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -52,7 +53,7 @@
                 </li>
               </ul>
           </li>
-          <li class="feature-item special">
+          <li class="feature-item special-item">
             <h3>Там есть мост Дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
@@ -78,7 +79,7 @@
 
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <b class="intresting">Заинтересовались?</b>
+        <b class="interesting">Заинтересовались?</b>
         <p>
           Укажите предполагаемые даты поездки,<br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне
@@ -93,14 +94,14 @@
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="booking-date">
             <label for="booking-date-arrival">Дата заезда:</label>
-            <input type="text" id="booking-date-arrival" name="arrival" placeholder="24 апреля 2017">
+            <input class="black-placeholder" type="text" id="booking-date-arrival" name="arrival" placeholder="24 апреля 2017">
             <button class="booking-date-calendar" type="button">
               <span class="visually-hidden">Календарь для выбора даты заезда</span>
             </button>
           </p>
           <p class="booking-date">
             <label for="booking-date-departure">Дата выезда:</label>
-            <input type="text" id="booking-date-departure" name="departure" placeholder="4 июля 2017">
+            <input class="black-placeholder" type="text" id="booking-date-departure" name="departure" placeholder="4 июля 2017">
             <button class="booking-date-calendar" type="button">
               <span class="visually-hidden">Календарь для выбора даты выезда</span>
             </button>
@@ -110,7 +111,7 @@
             <button class="button-minus" type="button">
               <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
             </button>
-            <input type="text" id="booking-people-adult" name="adult" placeholder="2">
+            <input class="black-placeholder" type="text" id="booking-people-adult" name="adult" placeholder="2">
             <button class="button-plus" type="button">
               <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
             </button>
@@ -120,12 +121,12 @@
             <button class="button-minus" type="button">
               <span class="visually-hidden">Кнопка уменьшения количества детей</span>
             </button>
-            <input type="text" id="booking-people-child" name="child" placeholder="0">
+            <input class="black-placeholder" type="text" id="booking-people-child" name="child" placeholder="0">
             <button class="button-plus" type="button">
               <span class="visually-hidden">Кнопка увеличения количества детей</span>
             </button>
           </p>
-          <button class="button searh-button" type="submit">Найти</button>
+          <button class="button search-button" type="submit">Найти</button>
         </form>
       </section>
 
@@ -143,12 +144,11 @@
         </ul>
       </div>
       <p class="copyright">
-        Website by
+        <b>Website by</b>
         <a class="webstudio" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="120" height="50">
         </a>
       </p>
     </footer>
-
   </body>
 </html>

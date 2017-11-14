@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Базовая стилизация хедера и главной навигации*/
+
+.site-navigation {
+  font-weight: bold;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #cacaca;
+}
+
+/*Базовая стилизация раздела со слоганом*/
+
+.intro {
+  background-color: #9e8187;
+  background-image: url("../img/sedona_landscape.jpg");
+  backround-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+/*Базовая стилизация раздела преимуществ*/
+
+.features {
+  text-align: center;
+}
+
+.features-lead {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.features-header {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.feature-item {
+  background-color: #eeeeee;
+}
+
+.special-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-list-added {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.feature-item h3,
+.feature-item h4 {
+  font-size: 21px;
+}
+
+/*Базовая стилизация раздела с кнопкой поиска отелей в Седоне. Здесь же задаю параметры button схожие для всех данных элементов*/
+
+.hotel-search {
+  text-align: center;
+}
+
+.interesting {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-search p {
+  line-height: 24px;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.order-button {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #766357;
+  border: none;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #604e43;
+}
+
+.order-button:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+/*Базовая стилизация раздела с формой поиска отелей в Седоне*/
+
+.booking-form input[type="text"] {
+  font: inherit;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking-form input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.black-placeholder::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.black-placeholder::-moz-placeholder {
+  color: #000000;
+}
+
+.black-placeholder:-moz-placeholder {
+  color: #000000;
+}
+
+.black-placeholder:-ms-input-placeholder {
+  color: #000000;
+}
+
+.booking-form label {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+/*Базовая стилизация футера*/
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+}
+
+.copyright b {
+  line-height: 26px;
+}
+
+/*Базовая стилизация раздела с формой фильтра жилья*/
+
+.filter-form {
+  color: #ffffff;
+  background-color: #81b3d2;
+  background-image: url("../img/sedona_boke.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-form input {
+  font: inherit;
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.white-placeholder::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.white-placeholder::-moz-placeholder {
+  color: #ffffff;
+}
+
+.white-placeholder:-moz-placeholder {
+  color: #ffffff;
+}
+
+.white-placeholder:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.slider-point:hover {
+  cursor: pointer;
+}
+
+.filter-button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+/*Базовая стилизация раздела с результатами поисков жилья*/
+
+.sorting-quantity {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting-types,
+.sorting-category {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.sorting-category a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-category-current a {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.sorting-category a:hover,
+.sorting-category a:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-category a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.hotel-name a {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: #cacaca;
+}
+
+.hotel-button {
+  background-color: #81b3d2;
+}
+
+.hotel-button:hover,
+.hotel-button:focus {
+  background-color: #669ec0;
+}
+
+.hotel-button:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.booking-button {
+  background-color: #766357;
+}
+
+.booking-button:hover,
+.booking-button:focus {
+  background-color: #604e43;
+}
+
+.booking-button:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.hotel-rating {
+  background-color: #f2f2f2;
+}

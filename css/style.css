@@ -14,24 +14,20 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
+} /*Подсмотрел из шортов у Макеева, пока не совсем понимаю как работает, сделал просто чтобы убрать лишнее со страницы*/
 
 a {
   text-decoration: none;
 }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 /*Базовая стилизация хедера и главной навигации*/
 
 .site-navigation {
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
   line-height: 26px;
-  background-color: #ffffff;
 }
 
 .site-navigation a {
@@ -56,7 +52,7 @@ ul, ol {
 .intro {
   background-color: #9e8187;
   background-image: url("../img/sedona_landscape.jpg");
-  backround-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
 }
@@ -67,19 +63,27 @@ ul, ol {
   text-align: center;
 }
 
+.features img {
+  width: 100%;
+}
+
 .features-lead {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .features-header {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
 }
 
-.feature-item {
+.features-list,
+.features-list-added {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #eeeeee;
 }
 
@@ -116,7 +120,7 @@ ul, ol {
 .button {
   font: inherit;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -144,7 +148,7 @@ ul, ol {
 
 .booking-form input[type="text"] {
   font: inherit;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -167,18 +171,18 @@ ul, ol {
 
 .black-placeholder::-moz-placeholder {
   color: #000000;
-}
+} /* Firefox 19+ */
 
 .black-placeholder:-moz-placeholder {
   color: #000000;
-}
+} /* Firefox 18- */
 
 .black-placeholder:-ms-input-placeholder {
   color: #000000;
-}
+} /*Префиксы нагуглил, не смог стандартными способами стилизовать placeholder и то в Firefox не завелось, IE11 Chrome - нормально*/
 
 .booking-form label {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
@@ -201,11 +205,21 @@ ul, ol {
 
 /*Базовая стилизация футера*/
 
+.main-footer {
+  text-align: center;
+}
+
 .hashtag {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .copyright b {
@@ -222,13 +236,20 @@ ul, ol {
   background-size: 100%;
 }
 
+.filter-form-infra,
+.filter-form-type {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .filter-form fieldset {
   border: none;
 }
 
 .filter-form legend {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .filter-form input {
@@ -246,11 +267,11 @@ ul, ol {
 
 .white-placeholder::-moz-placeholder {
   color: #ffffff;
-}
+} /* Firefox 19+ */
 
 .white-placeholder:-moz-placeholder {
   color: #ffffff;
-}
+} /* Firefox 18- */
 
 .white-placeholder:-ms-input-placeholder {
   color: #ffffff;
@@ -277,13 +298,19 @@ ul, ol {
 .sorting-quantity {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .sorting-types,
 .sorting-category {
   font-size: 12px;
   line-height: 18px;
+}
+
+.sorting-category {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 
@@ -306,6 +333,12 @@ ul, ol {
 .sorting-category a:active {
   color: #000000;
   border-bottom: none;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .hotel-name a {

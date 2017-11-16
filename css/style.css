@@ -30,7 +30,7 @@ a {
   line-height: 26px;
 }
 
-.site-navigation a {
+.site-navigation a[href] {
   color: #000000;
 }
 
@@ -38,12 +38,12 @@ a {
   color: #766357;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation a[href]:active {
   color: #cacaca;
 }
 
@@ -346,6 +346,10 @@ a {
   line-height: 26px;
 }
 
+.hotel-name a:link {
+  color: #000000;
+}
+
 .hotel-name a:hover,
 .hotel-name a:focus {
   color: #81b3d2;
@@ -384,5 +388,6 @@ a {
 }
 
 .hotel-rating {
+  color: #666666;
   background-color: #f2f2f2;
 }

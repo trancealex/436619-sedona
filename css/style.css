@@ -1,4 +1,6 @@
 * {
+  margin:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -27,27 +29,30 @@ a {
 
 .wrapper {
   max-width: 1200px;
+  min-width: 768px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 
-/*Базовая стилизация хедера и главной навигации*/
+/*Header and main navigation*/
 
 .main-header {
   position: relative;
+  padding: 0 6%;
   background-color: #ffffff;
 }
 
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 44.5%;
+  left: 44.33%;
 }
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 56px;
   margin: 0;
@@ -55,13 +60,20 @@ a {
   list-style: none;
   font-weight: 700;
   line-height: 26px;
-  outline: 1px dashed blue;
 }
 
 .site-navigation li {
   flex-basis: 20%;
-  outline: 1px dashed yellow;
 }
+
+.site-navigation li:nth-child(2) {
+  margin-right: 11%;
+}
+
+.site-navigation li:nth-child(2)::after {
+  content: "";
+  width: 20%;
+} 
 
 .align-left {
   text-align: left;
@@ -88,73 +100,192 @@ a {
   color: #cacaca;
 }
 
-/*Базовая стилизация раздела со слоганом*/
+/*Slogan*/
 
 .intro {
-  background-color: #9e8187;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 508px;
+  background-color: #9e8187; 
   background-image: url("../img/sedona_landscape.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center;
+  background-position: 50% 28%;
+  background-size: cover;
 }
 
-/*Базовая стилизация раздела преимуществ*/
+.intro img:after {
+
+}
+
+/*Features*/
 
 .features {
   text-align: center;
 }
 
-.features img {
-  width: 100%;
+.features h3,
+.features h4 {
+  font-size: 21px;
 }
 
 .features-lead {
+  margin: 60px 0px 26px 0px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .features-header {
+  margin: 0 0 52px;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
 }
 
 .features-list,
-.features-list-added {
-  margin: 0;
-  padding: 0;
+.advantage-list,
+.special-list {
   list-style: none;
   background-color: #eeeeee;
 }
 
-.special-item {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.features-list-added {
+.advantage-list {
+  height: 330px;
+  display: flex;
   color: #000000;
   background-color: #ffffff;
 }
 
-.feature-item h3,
-.feature-item h4 {
-  font-size: 21px;
+.advantage-item {
+  flex-basis: 33.33%;
 }
+
+.formalized-item {
+  display: flex;
+  height: 256px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.special-list {
+  height: 256px;
+  display: flex;
+}
+
+.special-item {
+  flex-basis: 33.33%;
+}
+
+.item-content {
+  flex-basis: 33.33%;
+}
+
+.order-1 {
+  order: -1;
+}
+
+.item-header {
+  margin-top: 47px;
+  margin-bottom: 25px;
+}
+
+.item-text {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+}
+
+.item-img-1 {
+  width: 66.67%;
+  height: 256px;
+  background-image: url("../img/sedona_feature_1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+  background-size: cover;
+}
+
+.item-img-2 {
+  width: 66.67%;
+  height: 256px;
+  background-image: url("../img/sedona_feature_2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+  background-size: cover;
+}
+
+.number-1:before {
+  content: "— №1 —";
+  display: block;
+  padding-bottom: 21px;
+}
+
+.number-2:before {
+  content: "— №2 —";
+  display: block;
+  padding-bottom: 21px;
+}
+
+.number-3:before {
+  content: "— №3 —";
+  display: block;
+  padding-bottom: 21px;
+}
+
+.number-4:before {
+  content: "— №4 —";
+  display: block;
+  padding-bottom: 21px;
+}
+
+.number-5:before {
+  content: "— №5 —";
+  display: block;
+  padding-bottom: 21px;
+}
+
+.house:before {
+  content: url("../img/icon-1.svg");
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 26px;
+}
+
+.meal:before {
+  content: url("../img/icon-3.svg");
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 26px;
+}
+
+.presents:before {
+  content: url("../img/icon-2.svg");
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 26px;
+}
+
+
+
+
+
+
 
 /*Базовая стилизация раздела с кнопкой поиска отелей в Седоне. Здесь же задаю параметры button схожие для всех данных элементов*/
 
 .hotel-search {
+  padding-top: 49px;
   text-align: center;
 }
 
 .interesting {
+  padding-bottom: 38px;
   font-size: 30px;
   line-height: 36px;
 }
 
 .hotel-search p {
+  margin-top: 24px;
+  margin-bottom: 47px;
   line-height: 24px;
 }
 
@@ -169,6 +300,7 @@ a {
 }
 
 .order-button {
+  padding: 30px 140px;
   font-size: 21px;
   line-height: 26px;
   background-color: #766357;

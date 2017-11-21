@@ -5,8 +5,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   color: #000000;
@@ -21,7 +19,7 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-} /*Подсмотрел из шортов у Макеева, пока не совсем понимаю как работает, сделал просто чтобы убрать лишнее со страницы*/
+}
 
 a {
   text-decoration: none;
@@ -35,12 +33,16 @@ a {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
+.wrapper-inner {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
 
 /*Header and main navigation*/
 
 .main-header {
   position: relative;
-  padding: 0 6%;
   background-color: #ffffff;
 }
 
@@ -54,9 +56,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 56px;
-  margin: 0;
-  padding: 0;
+  min-height: 56px;
   list-style: none;
   font-weight: 700;
   line-height: 26px;
@@ -69,11 +69,6 @@ a {
 .site-navigation li:nth-child(2) {
   margin-right: 11%;
 }
-
-.site-navigation li:nth-child(2)::after {
-  content: "";
-  width: 20%;
-} 
 
 .align-left {
   text-align: left;
@@ -106,16 +101,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 508px;
-  background-color: #9e8187; 
+  min-height: 508px;
+  background-color: #9e8187;/*На случай неподгрузки картинки*/ 
   background-image: url("../img/sedona_landscape.jpg");
   background-repeat: no-repeat;
   background-position: 50% 28%;
   background-size: cover;
-}
-
-.intro img:after {
-
 }
 
 /*Features*/
@@ -130,14 +121,15 @@ a {
 }
 
 .features-lead {
-  margin: 60px 0px 26px 0px;
+  margin-top: 60px;
+  margin-bottom: 26px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
 .features-header {
-  margin: 0 0 52px;
+  margin-bottom: 52px;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
@@ -150,39 +142,15 @@ a {
   background-color: #eeeeee;
 }
 
-.advantage-list {
-  height: 330px;
-  display: flex;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.advantage-item {
-  flex-basis: 33.33%;
+.features-list li,
+.special-list li {
+  min-height: 256px;
 }
 
 .formalized-item {
   display: flex;
-  height: 256px;
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.special-list {
-  height: 256px;
-  display: flex;
-}
-
-.special-item {
-  flex-basis: 33.33%;
-}
-
-.item-content {
-  flex-basis: 33.33%;
-}
-
-.order-1 {
-  order: -1;
 }
 
 .item-header {
@@ -191,62 +159,78 @@ a {
 }
 
 .item-text {
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  margin-left: 14.75%;
+  margin-right: 14.75%;
 }
 
-.item-img-1 {
+
+.special-item,
+.advantage-item,
+.item-content {
+  width: 33.33%;
+}
+
+.item-img {
   width: 66.67%;
-  height: 256px;
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+  background-size: cover;
+}
+
+.img-1 {
   background-image: url("../img/sedona_feature_1.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 55%;
-  background-size: cover;
 }
 
-.item-img-2 {
-  width: 66.67%;
-  height: 256px;
+.img-2 {
+  order: -1;
   background-image: url("../img/sedona_feature_2.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 55%;
-  background-size: cover;
+}
+
+.advantage-list {
+  display: flex;
+  min-height: 330px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.special-list {
+  display: flex;
 }
 
 .number-1:before {
   content: "— №1 —";
   display: block;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .number-2:before {
   content: "— №2 —";
   display: block;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .number-3:before {
   content: "— №3 —";
   display: block;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .number-4:before {
   content: "— №4 —";
   display: block;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .number-5:before {
   content: "— №5 —";
   display: block;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .house:before {
   content: url("../img/icon-1.svg");
   display: block;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 26px;
 }
 
@@ -254,38 +238,32 @@ a {
   content: url("../img/icon-3.svg");
   display: block;
   padding-top: 13px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 }
 
 .presents:before {
   content: url("../img/icon-2.svg");
   display: block;
-  padding-top: 13px;
+  padding-top: 8px;
   padding-bottom: 26px;
 }
 
-
-
-
-
-
-
-/*Базовая стилизация раздела с кнопкой поиска отелей в Седоне. Здесь же задаю параметры button схожие для всех данных элементов*/
+/*Hotel search*/
 
 .hotel-search {
-  padding-top: 49px;
   text-align: center;
 }
 
 .interesting {
-  padding-bottom: 38px;
+  margin-top: 49px;
+  margin-bottom: 26px;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
 }
 
-.hotel-search p {
-  margin-top: 24px;
-  margin-bottom: 47px;
+.search-info {
+  margin-bottom: 46px;
   line-height: 24px;
 }
 
@@ -300,7 +278,7 @@ a {
 }
 
 .order-button {
-  padding: 30px 140px;
+  padding: 30px 139px;
   font-size: 21px;
   line-height: 26px;
   background-color: #766357;
@@ -317,7 +295,14 @@ a {
   background-color: #503e33;
 }
 
-/*Базовая стилизация раздела с формой поиска отелей в Седоне*/
+/*Map*/
+
+.map-area {
+  min-height: 473px;
+}
+
+
+/*Form search*/
 
 .booking-form input[type="text"] {
   font: inherit;
@@ -376,30 +361,83 @@ a {
   background-color: #5496bd;
 }
 
-/*Базовая стилизация футера*/
+/*Footer*/
 
 .main-footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
 }
 
 .hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-
 }
 
 .footer-social-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 151px;
   list-style: none;
 }
 
-.copyright b {
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button svg {
+  margin: auto;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active svg path {
+  fill: #88b6d1;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 197px;
+}
+
+.copyright p {
   line-height: 26px;
 }
 
-/*Базовая стилизация раздела с формой фильтра жилья*/
+.webstudio {
+  display: block;
+  width: 115px;
+  height: 41px;
+  background-color: #ffffff;
+}
+
+.webstudio:hover svg path {
+  fill: #81b3d2;
+}
+
+.webstudio:active svg path {
+  fill: #bdbbbc;
+}
+
+/*Form filter*/
 
 .filter-form {
   color: #ffffff;
@@ -466,7 +504,7 @@ a {
 }
 
 
-/*Базовая стилизация раздела с результатами поисков жилья*/
+/*Search result*/
 
 .sorting-quantity {
   font-size: 21px;

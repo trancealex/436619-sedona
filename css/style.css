@@ -102,7 +102,7 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 508px;
-  background-color: #9e8187;/*На случай неподгрузки картинки*/ 
+  background-color: #9e8187;/*На случай неподгрузки картинки*/
   background-image: url("../img/sedona_landscape.jpg");
   background-repeat: no-repeat;
   background-position: 50% 28%;
@@ -439,18 +439,42 @@ a {
 
 /*Form filter*/
 
-.filter-form {
+.filter {
+  min-height: 217px;
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../img/sedona_boke.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: 50% 60%;
+  background-size: cover;
 }
+
+.filter-form {
+  display: flex;
+  width: 100%;
+}
+
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.column-checkboxed {
+  width: 22.82%;
+  margin-right: 15px;
+  outline: 1px dashed crimson;
+}
+
+.column-price {
+  width: 31.06%;
+  margin-left: auto;
+  outline: 1px dashed crimson;
+}
+
+
 
 .filter-form-infra,
 .filter-form-type {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -506,6 +530,10 @@ a {
 
 /*Search result*/
 
+.sorting {
+  min-height: 87px;
+}
+
 .sorting-quantity {
   font-size: 21px;
   line-height: 26px;
@@ -519,8 +547,6 @@ a {
 }
 
 .sorting-category {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -547,9 +573,15 @@ a {
 }
 
 .hotels-list {
-  margin: 0;
-  padding: 0;
   list-style: none;
+}
+
+.hotels-list:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list-item {
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotel-name a {

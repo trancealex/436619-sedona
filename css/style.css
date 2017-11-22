@@ -298,11 +298,25 @@ a {
 /*Map*/
 
 .map-area {
+  position: relative;
   min-height: 473px;
 }
 
 
 /*Form search*/
+
+.booking-form {
+  position: absolute;
+  top: 0;
+  left: 316px;
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  min-height: 395px;
+  padding: 56px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
 
 .booking-form input[type="text"] {
   font: inherit;
@@ -321,6 +335,68 @@ a {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
+}
+
+.booking-date {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  margin-bottom: 29px;
+}
+
+.booking-date label {
+  width: 100px;
+}
+
+.booking-date input {
+  width: 346px;
+  margin-left: auto;
+  padding: 6px 12px;
+}
+
+.booking-population {
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.booking-people {
+  display: flex;
+  align-items: center;
+  width: 230px;
+}
+
+.booking-people-adult {
+  width: 80px;
+}
+
+.booking-people-child {
+}
+
+.booking-people input {
+  width: 40px;
+  padding: 6px 14px;
+}
+
+.button-minus,
+.button-plus {
+  border: none;
+  width: 39px;
+  min-height: 38px;
+}
+
+.button-minus {
+  background:
+    url("../img/minus_simbol.png") no-repeat 50% 50%,
+    #f2f2f2;
+  margin-left: auto;
+  padding: 6px 14px;
+}
+
+.button-plus {
+  background:
+    url("../img/plus_simbol.png") no-repeat 50% 50%,
+    #f2f2f2;
+  padding: 6px 14px;
 }
 
 .black-placeholder::-webkit-input-placeholder {
@@ -345,6 +421,8 @@ a {
 }
 
 .search-button {
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 21px;
   line-height: 26px;
   background-color: #81b3d2;
@@ -459,18 +537,22 @@ a {
   padding: 0;
 }
 
+.filter-form div:first-child {
+  margin-right: 1.42%;
+} 
+
 .column-checkboxed {
-  width: 22.82%;
-  margin-right: 15px;
-  outline: 1px dashed crimson;
+  width: 22.72%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .column-price {
   width: 31.06%;
   margin-left: auto;
-  outline: 1px dashed crimson;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
 
 
 .filter-form-infra,
@@ -531,10 +613,13 @@ a {
 /*Search result*/
 
 .sorting {
+  display: flex;
+  align-items: center;
   min-height: 87px;
 }
 
 .sorting-quantity {
+  margin-right: 49px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -547,7 +632,16 @@ a {
 }
 
 .sorting-category {
+  display: flex;
   list-style: none;
+}
+
+.sorting-category li {
+  margin-right: 30px;
+}
+
+.sorting-category li:first-child {
+  margin-left: 40px;
 }
 
 
@@ -572,6 +666,21 @@ a {
   border-bottom: none;
 }
 
+.arrow-up {
+  margin-right: 12px;
+  margin-left: auto;
+}
+
+.arrow-up:hover svg path,
+.arrow-down:hover svg path {
+  fill: #231f20;
+}
+
+.arrow-up:active svg path,
+.arrow-down:active svg path {
+  fill: #81b3d2;
+}
+
 .hotels-list {
   list-style: none;
 }
@@ -581,7 +690,59 @@ a {
 }
 
 .hotels-list-item {
+  min-height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 1px solid #e5e5e5;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+.hotel-image {
+  margin-right: 30px;
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.hotel-name {
+  margin-bottom: 5px;
+}
+
+.hotel-type {
+  margin-bottom: 10px;
+}
+
+.order-section {
+  display: flex;
+}
+
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.hotel-rating {
+  width: 111px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 42px;
+  text-align: center;
+}
+
+.star-picture {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/star.svg");
 }
 
 .hotel-name a {
@@ -600,6 +761,10 @@ a {
 }
 
 .hotel-button {
+  width: 110px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 6px;
   background-color: #81b3d2;
 }
 
@@ -614,6 +779,9 @@ a {
 }
 
 .booking-button {
+  width: 142px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #766357;
 }
 

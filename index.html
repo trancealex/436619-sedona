@@ -3,7 +3,7 @@
   <head>
     <title>HTML Academy: Седона</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -35,57 +35,54 @@
         <section class="features">
           <h1 class="features-lead">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
           <h2 class="features-header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-          <ul class="features-list">
+          <ol class="features-list">
             <li class="formalized-item">
               <div class="item-content">
-                <h3 class="item-header">Настоящий<br> городок</h3>
-                <p class="item-text number-1">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                <h3>Настоящий<br> городок</h3>
+                <p class="number-1">Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="item-img img-1">
                 <span class="visually-hidden">Фоновое изображение, показывающее размеренную жизнь Седоны</span>
               </div>
             </li>
-            <li>
+            <li class="advantages">
               <ul class="advantage-list">
                 <li class="advantage-item">
-                  <h4 class="item-header house">Жилье</h4>
-                  <p class="item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <h4 class="accomondation">Жилье</h4>
+                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="advantage-item">
-                  <h4 class="item-header meal">Еда</h4>
-                  <p class="item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <h4 class="meal">Еда</h4>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advantage-item">
-                  <h4 class="item-header presents">Сувениры</h4>
-                  <p class="item-text">Не только китайского, но и местного производства!</p>
+                  <h4 class="souvenires">Сувениры</h4>
+                  <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="formalized-item">
               <div class="item-content">
-                <h3 class="item-header">Там есть<br> мост Дьявола</h3>
-                <p class="item-text number-2">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+                <h3>Там есть<br> мост Дьявола</h3>
+                <p class="number-2">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
               </div>
               <div class="item-img img-2">
-                <span class="visually-hidden">Фоновое изображение, показывающее Мост Дьавола</span>
+                <span class="visually-hidden">Фоновое изображение, показывающее мост Дьявола</span>
               </div>
             </li>
-          </ul>
-
-          <ul class="special-list">
-            <li class="special-item">
-              <h3 class="item-header">Небольшая<br> площадь</h3>
-              <p class="item-text number-3">Все достопримечательности находятся очень близко</p>
+            <li class="feature-item">
+              <h3>Небольшая<br> площадь</h3>
+              <p class="number-3">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="special-item">
-              <h3 class="item-header">Красивая<br> дорога</h3>
-              <p class="item-text number-4">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="feature-item">
+              <h3>Красивая<br> дорога</h3>
+              <p class="number-4">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="special-item">
-              <h3 class="item-header">Мало<br> туристов</h3>
-              <p class="item-text number-5">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="feature-item">
+              <h3>Мало<br> туристов</h3>
+              <p class="number-5">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-          </ul>
+          </ol>
         </section>
 
         <section class="hotel-search">
@@ -105,40 +102,41 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="booking-date">
               <label for="booking-date-arrival">Дата заезда:</label>
-              <input class="black-placeholder" type="text" id="booking-date-arrival" name="arrival" placeholder="24 апреля 2017">
+              <input type="text" id="booking-date-arrival" name="arrival" value="24 апреля 2017">
               <button class="booking-date-calendar" type="button">
                 <span class="visually-hidden">Календарь для выбора даты заезда</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path fill="#a9a9a9" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path fill="#a9a9a9" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                </svg>
               </button>
             </p>
             <p class="booking-date">
               <label for="booking-date-departure">Дата выезда:</label>
-              <input class="black-placeholder" type="text" id="booking-date-departure" name="departure" placeholder="4 июля 2017">
+              <input type="text" id="booking-date-departure" name="departure" value="4 июля 2017">
               <button class="booking-date-calendar" type="button">
                 <span class="visually-hidden">Календарь для выбора даты выезда</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path fill="#a9a9a9" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path fill="#a9a9a9" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
               </button>
             </p>
-            <div class="booking-population">
-              <p class="booking-people">
-                <label for="booking-people-adult">Взрослые:</label>
-                <button class="button-minus" type="button">
-                  <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
-                </button>
-                <input class="black-placeholder" type="text" id="booking-people-adult" name="adult" placeholder="2">
-                <button class="button-plus" type="button">
-                  <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
-                </button>
-              </p>
-              <p class="booking-people">
-                <label for="booking-people-child">Дети:</label>
-                <button class="button-minus" type="button">
-                  <span class="visually-hidden">Кнопка уменьшения количества детей</span>
-                </button>
-                <input class="black-placeholder" type="text" id="booking-people-child" name="child" placeholder="0">
-                <button class="button-plus" type="button">
-                  <span class="visually-hidden">Кнопка увеличения количества детей</span>
-                </button>
-              </p>
-            </div>
+            <p class="booking-people">
+              <label class="adult" for="adult">Взрослые:</label>
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
+              </button>
+              <input class="black-placeholder" type="text" id="adult" name="adult" value="2">
+              <button class="button-plus" type="button">
+                <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
+              </button>
+            </p>
+            <p class="booking-people">
+              <label class="child" for="child">Дети:</label>
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Кнопка уменьшения количества детей</span>
+              </button>
+              <input class="black-placeholder" type="text" id="child" name="child" value="0">
+              <button class="button-plus" type="button">
+                <span class="visually-hidden">Кнопка увеличения количества детей</span>
+              </button>
+            </p>
             <button class="button search-button" type="submit">Найти</button>
           </form>
         </section>

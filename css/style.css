@@ -337,7 +337,7 @@ img {
   text-align: center;
 }
 
-.interesting {  
+.interesting {
   margin-top: 50px;
   margin-bottom: 24px;
   font-size: 30px;
@@ -371,6 +371,7 @@ img {
 .order-button:hover,
 .order-button:focus {
   background-color: #604e43;
+  cursor: pointer;
 }
 
 .order-button:active {
@@ -417,11 +418,13 @@ img {
 
 .booking-form input:hover {
   background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .booking-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  padding-left: 10px;
   padding-top: 4px;
   padding-bottom: 4px;
   outline: none;
@@ -445,6 +448,7 @@ img {
   width: 75.22%;
   margin-left: auto;
   padding: 6px 12px;
+  padding-right: 35px;
   height: 38px;
 }
 
@@ -461,6 +465,7 @@ img {
 .booking-date-calendar:hover path,
 .booking-date-calendar:focus path {
   fill: #000000;
+  cursor: pointer;
 }
 
 .booking-date-calendar:active path {
@@ -517,12 +522,14 @@ img {
 .button-plus:hover,
 .button-plus:focus {
   background-image: url("../img/plus_simbol_hover.png");
-} 
+  cursor: pointer;
+}
 
 .button-minus:hover,
 .button-minus:focus {
   background-image: url("../img/minus_simbol_hover.png");
-} 
+  cursor: pointer;
+}
 
 .button-plus:active {
   background-image: url("../img/plus_simbol_active.png");
@@ -550,6 +557,7 @@ img {
 .search-button:hover,
 .search-button:focus {
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .search-button:active {
@@ -847,6 +855,7 @@ img {
 .filter-button:hover {
   color: #000000;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 
@@ -963,6 +972,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 260px;
+  padding: 0;
 }
 
 .hotel-name {
@@ -978,7 +988,6 @@ img {
   width: 110px;
   margin-right: 5px;
 }
-
 
 .hotel-price {
   width: 142px;
@@ -1038,6 +1047,7 @@ img {
 .hotel-button:hover,
 .hotel-button:focus {
   background-color: #669ec0;
+  cursor: pointer;
 }
 
 .hotel-button:active {
@@ -1055,6 +1065,7 @@ img {
 .booking-button:hover,
 .booking-button:focus {
   background-color: #604e43;
+  cursor: pointer;
 }
 
 .booking-button:active {

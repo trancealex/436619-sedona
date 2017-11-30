@@ -418,30 +418,37 @@ img {
 
 .booking-form input[type="text"]::-webkit-input-placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]::-moz-placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]:-moz-placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]::-ms-input-placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]:-ms-input-placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]::placeholder { 
   color: #000000; 
+  opacity: 1;
 }
 
 .booking-form input[type="text"]::placeholder-shown { 
-  color: #000000; 
+  color: #000000;
+  opacity: 1; 
 }
 
 .booking-date {
@@ -799,7 +806,6 @@ img {
 .max-range {
   width: 70px;
   cursor: pointer;
-  outline: 1px dashed blue;
 }
 
 .min-range {
@@ -815,7 +821,6 @@ img {
 .price-range input {
   width: 40px;
   margin: 0;
-  outline: 1px dashed green;
 }
 
 .price-range::after {
@@ -912,26 +917,32 @@ img {
 
 .filter-form input[type="text"]::-webkit-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .filter-form input[type="text"]::-moz-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .filter-form input[type="text"]:-moz-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .filter-form input[type="text"]::-ms-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .filter-form input[type="text"]:-ms-input-placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .filter-form input[type="text"]::placeholder { 
   color: #ffffff; 
+  opacity: 1;
 }
 
 .sorting {

@@ -159,9 +159,8 @@ img {
 }
 
 .features p {
-  margin: 0;
-  padding-left: 15%;
-  padding-right: 15%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .features-lead {
@@ -192,6 +191,7 @@ img {
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  background-color: #eeeeee;
 }
 
 .advantages {
@@ -215,17 +215,22 @@ img {
 .feature-item {
   width: 33.33%;
   min-height: 256px;
-  background-color: #eeeeee;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .advantage-item {
   width: 33.33%;
   min-height: 330px;
   margin: 0;
+  padding-left: 4.7%;
+  padding-right: 4.7%;
 }
 
 .item-content {
   width: 33.33%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .item-img {
@@ -375,6 +380,14 @@ img {
   overflow: hidden;
 }
 
+.map-area iframe {
+  position: absolute;
+  width: 1200px;
+  height: 593px;
+  frameborder: 0;
+  border: 0;
+}
+
 .booking-form {
   position: absolute;
   top: 0;
@@ -416,27 +429,22 @@ img {
   background-color: #ffffff;
 }
 
-.booking-form input[type="text"]::-webkit-input-placeholder { 
+.booking-form input[type="text"]::-webkit-input-placeholder {
   color: #000000; 
   opacity: 1;
 }
 
-.booking-form input[type="text"]::-moz-placeholder { 
+.booking-form input[type="text"]::-moz-placeholder {
   color: #000000; 
   opacity: 1;
 }
 
-.booking-form input[type="text"]:-moz-placeholder { 
+.booking-form input[type="text"]:-moz-placeholder {
   color: #000000; 
   opacity: 1;
 }
 
-.booking-form input[type="text"]::-ms-input-placeholder { 
-  color: #000000; 
-  opacity: 1;
-}
-
-.booking-form input[type="text"]:-ms-input-placeholder { 
+.booking-form input[type="text"]:-ms-input-placeholder {
   color: #000000; 
   opacity: 1;
 }
@@ -444,11 +452,6 @@ img {
 .booking-form input[type="text"]::placeholder { 
   color: #000000; 
   opacity: 1;
-}
-
-.booking-form input[type="text"]::placeholder-shown { 
-  color: #000000;
-  opacity: 1; 
 }
 
 .booking-date {
@@ -683,7 +686,7 @@ img {
   background-color: #81b3d2;
   background-image: url("../img/sedona_boke.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 60%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -713,7 +716,8 @@ img {
 }
 
 .filter-form fieldset:nth-child(2)  {
-  margin-left: 8.7%;
+  width: 253px;
+  padding-left: 6.7%;
 }
 
 .filter-form li {
@@ -725,7 +729,7 @@ img {
 }
 
 .column-checkboxed {
-  width: 160px;
+  width: 181px;
 }
 
 .column-checkboxed input:checked + label::before {
@@ -864,8 +868,8 @@ img {
 }
 
 .slider-point:hover {
-  background: #1c4f80;
   border: 9px solid #ffffff;
+  cursor: pointer;
 }
 
 .point-min-range {
@@ -889,21 +893,18 @@ img {
   border: none;
 }
 
-.slider-point:hover {
-  cursor: pointer;
-}
-
 .filter-button {
   display: block;
+  width: 137px;
   margin: 0 auto;
   padding: 6px 35px;
+  border: 2px solid #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -925,16 +926,6 @@ img {
   opacity: 1;
 }
 
-.filter-form input[type="text"]:-moz-placeholder { 
-  color: #ffffff; 
-  opacity: 1;
-}
-
-.filter-form input[type="text"]::-ms-input-placeholder { 
-  color: #ffffff; 
-  opacity: 1;
-}
-
 .filter-form input[type="text"]:-ms-input-placeholder { 
   color: #ffffff; 
   opacity: 1;
@@ -949,8 +940,8 @@ img {
   display: flex;
   align-items: center;
   width: 100%;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 32px;
+  padding-bottom: 30px;
 }
 
 .sorting p {
@@ -1012,9 +1003,12 @@ img {
   margin-left: auto;
 }
 
+.arrow-up:hover,
+.arrow-down:hover,
 .arrow-up:hover path,
 .arrow-down:hover path {
   fill: #231f20;
+  cursor: pointer;
 }
 
 .arrow-up:active path,
@@ -1039,8 +1033,8 @@ img {
 
 .hotels-list-item {
   min-height: 150px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -1103,7 +1097,7 @@ img {
   display: inline-block;
   width: 18px;
   height: 17px;
-  margin-right: 2px;
+  margin-right: 1px;
   background-image: url("../img/star.svg");
 }
 
